@@ -5,7 +5,7 @@ int main ()
 {
   int data, array [3][3] = {{2,4,6}, {8,10,12}, {14,16,18}};
 
-  int x, y, no = 0, jumlah = 9;
+  int x, y = 0, no = 0, jumlah = 9;
   int i, n, sum=0, bil[100] ;
   char pil;
   system ("cls");
