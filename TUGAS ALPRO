@@ -1,0 +1,82 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int data, array [3][3] = {{2,4,6}, {8,10,12}, {14,16,18}};
+
+  int x, y, no = 0, jumlah = 9;
+  int i, n, sum=0, bil[100] ;
+  char pil;
+  system ("cls");
+  cout << "Masukkan Program Yang Ingin Anda Gunakan : ";
+  cin >> pil;
+
+  switch (pil)
+  {
+      case '1':
+            cout << "Jumlah Bilangan    : ";
+            cin >> n;
+            for (i = 0; i < n; i++)
+            {
+                cin >> data;
+                sum += data;
+            }
+
+            cout << "Hasil Penjumlahan  : " << sum ;
+            break;
+        case '2' :
+        // Program Hitung Dengan Array //
+            system ("cls"); 
+            cout << "Jumlah Bilangan : ";
+            cin >> n ;
+
+            for (i=0; i<n; i++) 
+            { 
+               cin >> bil[i];
+               sum += bil[i];
+            }
+
+            cout << "Hasil Penjumlahan : ";
+            cout << sum ;
+        break;
+        case '3' :
+            // Program Dus Dengan Array //
+            system ("cls");
+            cout << "Jumlah Dus     : " << jumlah << endl;
+            cout << "Nomor Dus      :";
+            for (x=0; x<3; x-=-1)
+            {
+                for (y=0; y<3; y++)
+                {
+                    cout << " " << array[x][y];
+                }
+            }
+            cout << endl;
+            for (x=0; x<3; x-=-1)
+            {
+                for (y=0; y<3; y++)
+                {
+                   cout << "Nomor Dus ke " << no+1 << " =       " << array [x][y] << endl;
+                   no++;
+                }
+            }
+         break;
+         case '4':
+                // Program Dus Tanpa Array //
+                for (x = 0; x<9; x++)
+                {
+                    cout << "Nomor Dus ke " << no + 1 << " = " << y + 2 << endl;
+                    y += 2;
+                    no++;
+                }
+         break;
+ }
+                    
+                       
+                   
+    
+
+    
+    
+}
