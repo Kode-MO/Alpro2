@@ -1,0 +1,39 @@
+#include <iostream>
+
+#include<string.h>
+
+using namespace std;
+
+
+
+int main()
+
+{
+
+char string [70];
+
+int jum_karakter;
+
+cout << "Masukkan String : " ;
+
+cin.getline(string, sizeof(string)) ;
+
+cout << "\nJumlah String\n" ;
+
+
+
+jum_karakter = 0 ;
+
+for (int x = 0; satring [x] ; x++)
+
+{
+
+jum_karakter++ ;
+
+}
+
+
+
+cout << "Hasilnya Adalah : " << jum_karakter ;
+
+}
