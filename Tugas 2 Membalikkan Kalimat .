@@ -1,0 +1,27 @@
+#include <iostream>
+
+#include <string.h>
+
+using namespace std;
+
+int main()
+
+{
+
+char kalimat[100] ;
+
+cout << "Masukkan Kalimat : " ; 
+
+cin.getline(kalimat, sizeof(kalimat)) ;
+
+int x = strlen(kalimat) ;
+
+for (int a = x-1 ; a >= 0 ; a--)
+
+{
+
+cout << kalimat [a];
+
+}
+
+}
