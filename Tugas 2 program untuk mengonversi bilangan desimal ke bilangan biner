@@ -1,0 +1,60 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+void binner(int bil) ;
+
+
+
+
+int main () 
+
+{
+
+int angka ;
+
+cout << "Masukkan Bilangan : " ;
+
+cin >> angka ;
+
+cout << "hasil binner " << a << " adalah  : " ;
+
+binner(a) ;
+
+cout << endl;
+
+
+
+return 0; 
+
+}
+
+
+
+void binner(int bil)
+
+{
+
+int x , y;
+
+if (bil <= 1)
+
+{
+
+cout << bil;
+
+return;
+
+}
+
+x = bil % 2 ;
+
+y = bil /2 ;
+
+binner ( y) ;
+
+cout << x ;
+
+}
