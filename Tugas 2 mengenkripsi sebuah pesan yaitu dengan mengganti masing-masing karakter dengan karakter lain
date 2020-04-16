@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main ()
+
+{
+
+int pesanAngka ;
+
+cout << "Masukkan Angka untuk mengenkripsi menjadi pesan : " ;
+
+cin >> pesanAngka ;
+
+cout << "Hasilnya = " << (char) pesanAngka ;
+
+}
