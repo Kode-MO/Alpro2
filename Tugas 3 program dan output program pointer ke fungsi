@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void tambahkanSatu(int* ptr) {
+  (*ptr)++; // tambahkan 1 to *ptr
+}
+
+int main()
+{
+  int* p, i = 10;
+  p = &i;
+  tambahkanSatu(p);
+
+  printf("%d", *p); // 11
+  return 0;
+}
+
+
+
+
+Di sini, nilai yang disimpan di p, * p, awalnya 10.
+
+Kami kemudian memberikan pointer p ke fungsi tambahkanSatu (). Pointer ptr mendapatkan alamat ini di fungsi tambahkanSatu ().
+
+Di dalam fungsi, kami meningkatkan nilai yang disimpan pada ptr dengan 1 menggunakan (* ptr) ++ ;. Karena ptr dan p pointer keduanya memiliki alamat yang sama, * p di dalam main () juga 11.
