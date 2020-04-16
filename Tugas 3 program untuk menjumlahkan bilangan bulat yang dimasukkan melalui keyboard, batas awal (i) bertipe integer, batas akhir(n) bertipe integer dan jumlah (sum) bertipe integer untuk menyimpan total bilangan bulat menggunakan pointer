@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main ()
+
+{
+
+int i, n, data , sum = 0;
+
+cout << "Jumlah Bilangan : ";
+
+
+cin >> n;
+
+for (i = 0; i < n; i++)
+
+{
+
+cin >> data;
+
+sum += data;
+
+}
+
+
+
+cout << "Hasil Penjumlahan : " << sum ;
+
+}
