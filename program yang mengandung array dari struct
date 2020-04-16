@@ -1,0 +1,142 @@
+#include <stdio.h>
+#include <conio.h>
+#include <iostream.h>
+#include <iomanip.h>
+
+
+
+char ket(float n)
+
+judul()
+{
+cout<<“\t\t\t PENITIPAN HEWAN PELIHARAAN “<<endl;
+cout<<“\t\t\t          LIES PET   “<<endl;
+cout<<“=========================================”<<endl;
+}
+
+garis()
+{
+cout<<“=========================================”<<endl;
+}
+
+long totalsub(long hrg,long jh)
+{
+return(hrg*jh);
+}
+
+long bayartotal(long ttlbyr,long sbttl)
+{
+return(ttlbyr+sbttl);
+}
+
+long kembali(long ubyr,long tbyr)
+{
+return(ubyr-tbyr);
+}
+
+main()
+{
+char napetu[25],napem[25],deui;
+int i,jml_data;
+long tobay,ubay,ukem;
+
+struct
+{
+char kohew[5],koper,jeper[20],jehew[20];
+int jumhew,harga;
+long subtotal;
+}meong[10];
+
+awal:
+clrscr();
+tobay=0;
+judul();
+cout<<“Nama Petugas:”;gets(napetu);
+cout<<“Nama Pemilik:”;gets(napem);
+cout<<“Jumlah Data Peliharaan:”;cin>>jml_data;
+cout<<endl;
+
+for(i=1;i<=jml_data;i++)
+
+
+
+{
+cout<<“Hewan Ke-:”;<<i<<endl;
+cout<<“Kode Jenis Hewan[K/H/B]:”;cin>>meong[i].kohew;
+cout<<“Kode Perawatan[1/2]:”;cin>>meong[i].koper;
+cout<<“Jumlah Hewan:”;cin>>meong[i].jumhew;
+
+if(strcmpi(meong[i].kohew,”K”)==0)
+{
+strcpy(meong[i].jehew,”Kucing”);
+if(strcmpi(meong[i].koper,”1″)==0)
+{
+strcpy(meong[i].jeper,”Lux”);
+harga=250000;
+}
+else
+{
+strcpy(meong[i].jeper,”Intensif”);
+harga=300000;
+}
+}
+else
+{
+strcpy(meong[i].jehew.”Hamster”);
+if(strcmpi(meong[i].koper,”1″)==0)
+{
+strcpy(meong[i].jeper,”Lux”);
+harga=150000;
+}
+else
+{
+strcpy(meong[i].jeper,”Intensif”);
+harga=100000;
+}
+cout<<endl;
+}
+cout<<endl<<endl;
+
+clrscr();/********************OUTPUT****************/
+judul();
+cout<<“Nama Petugas:”;<<napetu<<endl;
+cout<<“Nama Pemilik:”;<<napem<<endl;
+cout<<endl;
+
+garis();
+cout<<“No         Jenis          Jenis              Biaya              Jumlah       Subtotal   “<<endl;
+cout<<”              Hewan      Perawatan         Perawatan            Hewan                  “<<endl;
+garis();
+
+for(i=1;i<=jml_data;i++)
+
+{
+
+cout<<setiosflag(ios::left)<<setw(5)<<i;
+cout<<setiosflag(ios::left)<<setw(20)<<meong[i].jehew;
+cout<<setiosflag(ios::left)<<setw(20)<<meong[i].jeper;
+cout<<setiosflag(ios::left)<<setw(20)<<meong[i].harga;
+cout<<setiosflag(ios::left)<<setw(20)<<meong[i].jumhew;
+meong[i].subtotal=totalsub(meong[i].harga,meong[i].jumhew);
+cout<<setiosflag(ios::left)<<setw(20)<<meong[i].subtotal<<endl;
+tobay=bayartotal(tobay,meong[i].subtotal);
+
+
+
+}
+
+garis();
+cout<<“\t\t\tTotal Bayar:”;<<tobay<<endl;
+cout<<“\t\t\tUang Bayar:”;cin>>ubay;
+ukem=kembali(ubay,tobay);
+cout<<“\t\t\tUang Kembali:”<<ukem<<endl;
+cout<<endl<<endl;
+
+cout<<“\t\t\t INPUT DATA LAGI[Y/T]:”;cin>>deui;
+if(deui==’Y’||deui==’y’)
+goto awal;
+
+char ket(float n)
+
+getch();
+}
