@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+void Tukar(int *A, int *B) //tanda * digunakan untuk menunjukan
+
+
+
+{                                     //pointer atau alamat dari variabel A dan B
+
+int Temp;
+
+Temp = *A;
+
+*A = *B;
+
+*B = Temp;;
+
+printf(“\n Nilai di dalam fungsi –> A = %d dan B = %d”,*A,*B);
+
+printf(“\n Alamat di dalam fungsi –>A = %d dan B = %d”,A,B);
+
+}
+
+int main()
+
+{
+
+//deklarasi data
+
+int A,B;
+
+//input nilai
+
+printf(“Masukan Nilai A : “);scanf(“%d”,&A);
+
+printf(“Masukan Nilai B : “);scanf(“%d”,&B);
+
+//menampilkan nilai awal
+
+printf(“\n sebelum fungsi dijalankan nilai A = %d dan B = %d”,A,B);
+
+printf(“\n sebelum fungsi dijalankan alamat A = %d dan B = %d”,&A,&B);
+
+//panggil fungsi Tukar
+
+Tukar(&A,&B);
+
+
+
+//menampilkan nilai akhir
+
+printf(“\n setelah fungsi dijalankan nilai A = %d dan B = %d”,A,B);
+
+printf(“\n sebelum fungsi dijalankan alamat A = %d dan B = %d”,&A,&B);
+
+return 0;
+
+}
