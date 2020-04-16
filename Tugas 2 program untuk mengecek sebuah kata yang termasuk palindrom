@@ -1,0 +1,49 @@
+#include <iostream>
+
+#include <cstring>
+
+using namespace std;
+
+
+
+int main () 
+
+{
+
+ char kata[50] ;
+
+cout << "Masukkan Kata : " ;
+
+gets(kata) ;
+
+strlwr(kata);
+
+int x = 0 , y = strlen(kata)-1 ;
+
+while (x < y)
+
+{
+
+if (kata[x] == kata [y])
+
+{
+
+cout << "Termasuk Palindrom";
+
+break;
+
+}
+
+else
+
+{
+
+cout << "Tidak Termasuk Palindrom";
+
+break;
+
+}
+
+}
+
+}
