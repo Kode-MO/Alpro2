@@ -1,0 +1,25 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+
+{
+
+int x, y, no = 0 ; 
+
+for (x = 0; x<9; x++)
+
+
+{
+
+cout << "Nomor Dus ke " << no + 1 << " = " << y + 2 << endl;
+
+y += 2;
+
+no++;
+
+}
+
+}
