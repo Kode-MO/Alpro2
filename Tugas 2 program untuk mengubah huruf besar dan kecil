@@ -1,0 +1,29 @@
+#include <iostream>
+
+#include <cstring>
+
+using namespace std ;
+
+
+
+int main ()
+
+{
+
+char hurufBesar [50] , hurufKecil [50] ;
+
+cin >> hurufBesar ;
+
+
+
+for (int x = 0 ; x < strlen(hurufBesar) ; x++)
+
+{
+
+hurufKecil[x] = hurufBesar[x] + 32 ;
+
+cout << hurufKecil[x] ;
+
+}
+
+}
