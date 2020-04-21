@@ -1,0 +1,39 @@
+#include <fstream>
+
+#include <iostream>
+
+using namespace std;
+
+ int main () {
+
+   ifstream fileSaya ;
+
+  cout << "Saya membuka file" ; 
+
+   fileSaya.open ("*.txt");
+
+   if (!fileSaya.fail()) {
+
+   cout << "Isi dari File saya adalah : ";
+
+   while (!fileSaya.eof()) {
+
+   fileSaya.get(text);
+
+   cout << cv_text ;
+
+}
+
+
+
+  fileSaya.close() ;
+
+} else {
+
+   cout << "File Tidak Ditemukan\n" ;
+
+}
+
+  return 0;
+
+}
