@@ -1,0 +1,23 @@
+#include <iostream>
+
+#include <fstream>
+
+using namespace std;
+
+
+
+int main ()
+
+{
+
+ ofstream output;
+
+output.open("datatugas5.txt") ;
+
+
+
+output << "Menulis data sembarang" ;
+
+output.close() ;
+
+}
