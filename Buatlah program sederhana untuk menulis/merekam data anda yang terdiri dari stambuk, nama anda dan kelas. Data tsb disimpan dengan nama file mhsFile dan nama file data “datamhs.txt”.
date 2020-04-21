@@ -1,0 +1,29 @@
+#include <iostream>
+
+#include <fstream>
+
+int main ()
+
+{
+
+ofstream mhsFile ; 
+
+mhsFile.open ("datamhs.txt") ;
+
+
+
+mhsFile << "Muhid Mustari\n" ;
+
+mhsFile << "Kelas A2\n" ;
+
+mhsFile << "13020190083" ;
+
+
+
+mhsFile.close();
+
+
+
+
+
+}
