@@ -1,0 +1,29 @@
+#include <iostream>
+
+#include <fstream>
+
+
+
+int main () 
+
+{
+
+ ofstream datamhs ;
+
+ datamhs.open("datamhs.txt") ;
+
+
+
+datamhs << "Muhid Mustari\n" ;
+
+datamhs << "A2\n" ;
+
+datamhs << "13020190083\n" ;
+
+datamhs << "3,87\n" ;
+
+
+
+datamhs.close();
+
+}
